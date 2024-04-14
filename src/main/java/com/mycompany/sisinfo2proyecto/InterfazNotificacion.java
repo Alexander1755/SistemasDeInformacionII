@@ -1,5 +1,5 @@
 
-//package com.mycompany.sisinfo2proyecto;
+package com.mycompany.sisinfo2proyecto;
 
 /**
  *

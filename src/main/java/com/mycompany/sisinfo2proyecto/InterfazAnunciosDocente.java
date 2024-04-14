@@ -1,5 +1,5 @@
 
-//package com.mycompany.sisinfo2proyecto;
+package com.mycompany.sisinfo2proyecto;
 
 /**
  *
@@ -17,7 +17,7 @@ public class InterfazAnunciosDocente extends JFrame {
     private Connection conexion;
 
     public InterfazAnunciosDocente() {
-        setTitle("tablon de Anuncios");
+        setTitle("Tablón de Anuncios");
         setSize(400, 300);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -80,9 +80,9 @@ public class InterfazAnunciosDocente extends JFrame {
     private void cargarAnuncios() {
         try {
             Statement statement = conexion.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT anuncios FROM materias");
+            ResultSet resultSet = statement.executeQuery("SELECT descripcion_anuncio FROM anuncio");
             while (resultSet.next()) {
-                String anuncio = resultSet.getString("anuncios");
+                String anuncio = resultSet.getString("descripcion_anuncio");
                 areaAnuncios.append("- " + anuncio + "\n");
             }
         } catch (SQLException ex) {
@@ -103,7 +103,7 @@ public class InterfazAnunciosDocente extends JFrame {
 
     private void guardarAnuncio(String anuncio) {
         try {
-            String query = "INSERT INTO materias (anuncios) VALUES (?)";
+            String query = "INSERT INTO anuncio (descripcion_anuncio, fecha_anuncio, hora_anuncio) VALUES (?, CURRENT_DATE, CURRENT_TIME)";
             PreparedStatement statement = conexion.prepareStatement(query);
             statement.setString(1, anuncio);
             statement.executeUpdate();
