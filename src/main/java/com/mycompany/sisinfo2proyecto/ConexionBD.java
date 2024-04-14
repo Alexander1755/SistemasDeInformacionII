@@ -1,3 +1,5 @@
+package com.mycompany.sisinfo2proyecto;
+
 import java.awt.HeadlessException;
 import java.sql.Connection;
 import java.sql.DriverManager;
