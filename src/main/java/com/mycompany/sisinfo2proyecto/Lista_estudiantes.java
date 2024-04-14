@@ -25,7 +25,7 @@ public class Lista_estudiantes extends javax.swing.JFrame {
         modelo.setRowCount(0);
         String datos[] = new String[5];
         String query = "SELECT row_number() OVER (ORDER BY apellido_paterno DESC) as puesto, apellido_paterno,"
-                     + "apellido_materno, nombres, email"
+                     + "apellido_materno, nombres, email "
                      + "FROM materia,inscripcion,alumno,usuario "             
                      + "WHERE materia.id_materia = inscripcion.id_materia AND alumno.id_alumno = inscripcion.id_alumno"
                      + " AND usuario.id_usuario = alumno.id_usuario AND materia =" + materia + " "
