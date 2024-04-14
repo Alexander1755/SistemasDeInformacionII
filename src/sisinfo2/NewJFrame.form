@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+              <Component id="scrollPane1" min="-2" pref="766" max="-2" attributes="0"/>
+              <EmptySpace pref="692" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <Component id="scrollPane1" min="-2" pref="390" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="66" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="java.awt.ScrollPane" name="scrollPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.ScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JList" name="jList1">
+              <Properties>
+                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                  <StringArray count="30">
+                    <StringItem index="0" value="NUEVA MARCHA DOCENTE Debido a que ma&#xf1;ana jueves habr&#xe1; una nueva marcha a las 9:30 y perjudica la clase del grupo 2"/>
+                    <StringItem index="1" value="el d&#xed;a VIERNES 12 a horas 9:45 en el AULA 692C"/>
+                    <StringItem index="2" value="la clase ser&#xe1; para ambos grupos (1 y 2)"/>
+                    <StringItem index="3" value="debido a que ya no podemos perjudicarnos en avance"/>
+                    <StringItem index="4" value="especialmente deben estar los grupos que deben exponer temas relativos a VLANs"/>
+                    <StringItem index="5" value=""/>
+                    <StringItem index="6" value="MARCHA INSTITUCIONAL Debido a que ma&#xf1;ana jueves habr&#xe1; marcha institucional a las 9:00 y perjudica la clase del grupo 2"/>
+                    <StringItem index="7" value="el d&#xed;a VIERNES a horas 9:45 en el AULA 692C"/>
+                    <StringItem index="8" value="la clase sera para ambos grupos (1 y 2)"/>
+                    <StringItem index="9" value="debido a que ya no podemos perjudicarnos en avance"/>
+                    <StringItem index="10" value=""/>
+                    <StringItem index="11" value="tres"/>
+                    <StringItem index="12" value="cuatro"/>
+                    <StringItem index="13" value="cinco"/>
+                    <StringItem index="14" value="seis"/>
+                    <StringItem index="15" value="siete"/>
+                    <StringItem index="16" value="ocho"/>
+                    <StringItem index="17" value="nueve"/>
+                    <StringItem index="18" value="diez"/>
+                    <StringItem index="19" value="once"/>
+                    <StringItem index="20" value="doce"/>
+                    <StringItem index="21" value="trece"/>
+                    <StringItem index="22" value="catorce"/>
+                    <StringItem index="23" value="quince"/>
+                    <StringItem index="24" value="dieciseis"/>
+                    <StringItem index="25" value="diecisiete"/>
+                    <StringItem index="26" value="dieciocho"/>
+                    <StringItem index="27" value="diecinueve"/>
+                    <StringItem index="28" value="veinte"/>
+                    <StringItem index="29" value="veintiuno"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
