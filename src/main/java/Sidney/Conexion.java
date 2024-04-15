@@ -127,14 +127,18 @@ public class Conexion {
                 ResultSet resultado2 = ejecutar2.executeQuery();
             
                 //Verificamos si se obtuvo un resultado de la consulta
+                 if (resultado2.next()){
                     String nomMat = resultado2.getString("nombre_materia");
+                    System.out.print(nomMat);
                     String descrip = resultado1.getString("descripcion_anuncio");
                     Time hora = resultado1.getTime("hora_anuncio");
                     Date fecha = resultado1.getDate("fecha_anuncio");
-                    String anunciotext = "<html>"+"<br>" + nomMat + "<br>" + fecha + "<br>" + hora + "<br>" + descrip + "<br>"+"."+ "</html>";
+                    String anunciotext = "<html>"+"<br>MATERIA:"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ nomMat+"<br>"+fecha
+                            +" a las "+hora+"<br>DESCRIPCIÓN:"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+descrip+"<br>"+"."+"</html>";
                     anuncio.add(anunciotext);
-                    i++; // Incrementamos el índice del array
-                
+                     // Incrementamos el índice del array
+                 }
+                 i++;
             }
         } catch (SQLException ex) {
             ex.printStackTrace(); // Imprimimos la traza de la excepción para depuración
@@ -166,15 +170,17 @@ public class Conexion {
                 ResultSet resultado3 = ejecutar3.executeQuery();
             
                 //Verificamos si se obtuvo un resultado de la consulta
+                if (resultado2.next()&&resultado3.next()){
                     String nomTarea = resultado2.getString("nombre_tarea");
                     String nomDocente = resultado3.getString("nombre");
                     Time hora = resultado1.getTime("hora_comentario");
                     Date fecha = resultado1.getDate("fecha_comentario");
                     String contenido = resultado1.getString("contenido");
-                    String coment = "<html>"+"<br>" + nomTarea + "<br>"+ nomDocente + "<br>" + fecha + "<br>" + hora + "<br>" + contenido + "<br>"+"."+ "</html>";
+                    String coment = "<html>"+"<br>TAREA:"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ nomTarea + "<br> DOCENTE:"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+                            +nomDocente + "<br>"+ fecha + " a las " + hora + "<br> COMENTARIO:"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ contenido + "<br>"+"."+ "</html>";
                     comentarios.add(coment);
                     i++; // Incrementamos el índice del array
-                
+                }
             }
         } catch (SQLException ex) {
             ex.printStackTrace(); // Imprimimos la traza de la excepción para depuración

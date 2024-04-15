@@ -52,6 +52,7 @@ public class IUVerAnuncio extends JFrame{
             }
             label.setText(anuncio);
             label.setForeground(Color.WHITE);
+            label.setFont(new Font("Arial",0,14));
             panelContenedor.add(label);
             i++;
             System.out.println(anuncio);

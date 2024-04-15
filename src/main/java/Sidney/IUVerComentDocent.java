@@ -48,9 +48,10 @@ public class IUVerComentDocent extends JFrame{
             label.setPreferredSize(new Dimension(anchoPantalla/2, 400));//tamano panel, no importa mucho
             label.setOpaque(true); // Establecer que el JLabel sea opaco para mostrar el color de fondo
             if(i%2 == 0){
-                label.setBackground(new Color(230, 230, 230)); // Color panel
+                label.setBackground(new Color(200, 200, 200)); // Color panel
             }
             label.setText(comentario);
+            label.setFont(new Font("Arial",0,14));
             panelContenedor.add(label);
             i++;
             //System.out.println(comentario);
